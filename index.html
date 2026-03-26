@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amadu Kamal | Full-Stack Software Engineer & Founder of Model Analysis Hub</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    
+    <!-- Professional SEO Search Snippet -->
+    <meta name="description" content="Official portfolio of Amadu Kamal, Founder of Model Analysis Hub, Full-Stack Software Engineer specializing in data analytics, system architecture, and web development." />
+    <meta name="keywords" content="Amadu Kamal, Software Engineer Ghana, Full Stack Developer, System Architect, Model Analysis Hub, Data Analytics, Web Development" />
+    <meta name="author" content="Amadu Kamal" />
+
+    <!-- Google / Search Engine Meta Tags -->
+    <meta itemprop="name" content="Amadu Kamal | Software Engineer & Founder">
+    <meta itemprop="description" content="Founder of Model Analysis Hub, specializing in data analytics, scalable web architectures, and intelligent management systems.">
+    <meta itemprop="image" content="images/amadu-kamal.jpg">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:url" content="https://amadukamal.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amadu Kamal | Software Engineer & Founder">
+    <meta property="og:description" content="Founder of Model Analysis Hub. Specializing in data analytics, full-stack development, and system architecture.">
+    <meta property="og:image" content="images/amadu-kamal.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amadu Kamal | Software Engineer">
+    <meta name="twitter:description" content="Founder of Model Analysis Hub. Building data-driven digital solutions.">
+    <meta name="twitter:image" content="images/amadu-kamal.jpg">
+
+    <!-- Schema.org ProfilePage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Amadu Kamal",
+        "jobTitle": "Full-Stack Software Engineer & Founder",
+        "description": "Founder of Model Analysis Hub. Expert in building scalable digital systems, data analytics platforms, and intelligent management solutions.",
+        "image": "images/amadu-kamal.jpg",
+        "url": "https://amadukamal.com",
+        "sameAs": [
+          "https://github.com/kamaldeenjnr",
+          "https://linkedin.com/in/amadu-kamal-65ab5326a",
+          "https://wa.me/233595586430"
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "System Architecture",
+          "Full-Stack Development",
+          "Data Analytics",
+          "Statistical Modeling",
+          "Dashboard Development",
+          "React.js",
+          "Node.js",
+          "Python"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Model Analysis Hub",
+          "url": "https://modelanalysishub.com"
+        }
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#7c3aed',
+                        accent: '#06b6d4',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-glow: rgba(37, 99, 235, 0.4);
+        }
+        
+        /* Light Mode (Default) */
+        body {
+            background: linear-gradient(-45deg, #f8fafc, #e0f2fe, #fdf4ff, #f0f9ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #0f172a;
+            transition: all 0.3s ease;
+        }
+        
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        /* Dark Mode */
+        body.dark-mode {
+            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #0c4a6e, #020617);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #f8fafc;
+        }
+        
+        body.dark-mode .glass-card {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        body.dark-mode .glass-card:hover {
+            background: rgba(30, 41, 59, 0.9);
+            border-color: rgba(37, 99, 235, 0.4);
+        }
+        
+        body.dark-mode .text-gray-600,
+        body.dark-mode .text-gray-500,
+        body.dark-mode .text-gray-700,
+        body.dark-mode .text-gray-800 {
+            color: #cbd5e1;
+        }
+        
+        body.dark-mode .bg-white,
+        body.dark-mode .bg-white\/80,
+        body.dark-mode .bg-white\/90 {
+            background-color: #1e293b;
+        }
+        
+        body.dark-mode .border-gray-200,
+        body.dark-mode .border-gray-300 {
+            border-color: #334155;
+        }
+        
+        body.dark-mode .bg-gray-100 {
+            background-color: #334155;
+        }
+        
+        body.dark-mode .btn-primary {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        }
+        
+        body.dark-mode .bg-gradient-to-br.from-blue-50\/50.to-purple-50\/50 {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+        
+        body.dark-mode .bg-gradient-to-br.from-blue-50.to-purple-50 {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+        
+        body.dark-mode .bg-gradient-to-br.from-purple-50.to-pink-50 {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+        
+        body.dark-mode .bg-gradient-to-br.from-blue-50\/30.to-purple-50\/30 {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+        
+        body.dark-mode input,
+        body.dark-mode textarea,
+        body.dark-mode select {
+            background-color: #1e293b;
+            border-color: #334155;
+            color: #f8fafc;
+        }
+        
+        body.dark-mode input:focus,
+        body.dark-mode textarea:focus,
+        body.dark-mode select:focus {
+            border-color: var(--primary);
+            ring-color: rgba(37, 99, 235, 0.3);
+        }
+        
+        body.dark-mode #navbar .glass-card {
+            background: rgba(15, 23, 42, 0.9);
+        }
+        
+        body.dark-mode .text-gradient {
+            background: linear-gradient(90deg, #60a5fa, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        
+        body.dark-mode ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        
+        body.dark-mode ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+        }
+        
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.08) 0%, transparent 50%);
+        }
+        
+        body.dark-mode .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.15) 0%, transparent 50%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.95);
+            border-color: rgba(37, 99, 235, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.2);
+        }
+        
+        body.dark-mode .glass-card:hover {
+            box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-gradient {
+            background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+        }
+        
+        .btn-glow:hover {
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        /* Image loading optimization */
+        img {
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        
+        img.loaded {
+            opacity: 1;
+        }
+        
+        .project-image {
+            transition: transform 0.5s ease;
+        }
+        
+        .group:hover .project-image {
+            transform: scale(1.05);
+        }
+        
+        .profile-image {
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        #preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: linear-gradient(-45deg, #f8fafc, #e0f2fe, #fdf4ff, #f0f9ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+        
+        body.dark-mode #preloader {
+            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #0c4a6e, #020617);
+        }
+        
+        input, textarea, select {
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            transform: scale(1.02);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .stat-number {
+            animation: countUp 0.5s ease-out forwards;
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #e2e8f0; }
+        ::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #1d4ed8; }
+        
+        /* Theme toggle button */
+        .theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        body.dark-mode .theme-toggle {
+            background: #1e293b;
+            color: #f8fafc;
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Back to top button */
+        #back-to-top {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 100;
+        }
+        
+        body.dark-mode #back-to-top {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary/20 selection:text-primary">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-primary border-r-2 border-primary"></div>
+    </div>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon text-primary text-xl"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-6 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto flex items-center justify-between glass-card rounded-2xl px-8 py-3 shadow-sm">
+            <a href="#" class="flex items-center gap-2 text-xl font-extrabold tracking-tighter">
+                <img src="images/logo.jpg" alt="AK Logo" class="h-8 w-auto rounded-lg" onload="this.classList.add('loaded')">
+                <span class="text-gray-800 dark-mode-text">AK<span class="text-primary italic">.</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="text-gray-700 dark-mode-text hover:text-primary transition-colors">About</a>
+                <a href="#projects" class="text-gray-700 dark-mode-text hover:text-primary transition-colors">Projects</a>
+                <a href="#services" class="text-gray-700 dark-mode-text hover:text-primary transition-colors">Services</a>
+                <a href="#testimonials" class="text-gray-700 dark-mode-text hover:text-primary transition-colors">Testimonials</a>
+                <a href="#contact" class="px-5 py-2 rounded-xl btn-primary text-white font-bold btn-glow transition-all">Hire Me</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-btn">
+                <i class="fas fa-bars text-gray-700 dark-mode-text"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 hero-gradient">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold text-primary tracking-widest uppercase">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    Founder of Model Analysis Hub
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.1] text-gray-800 dark-mode-text">
+                    Transforming <br/>
+                    <span class="text-gradient">Data Into Decisions</span> <br/>
+                    & Digital Solutions.
+                </h1>
+                <p class="text-gray-600 dark-mode-text text-lg leading-relaxed max-w-lg">
+                    I'm Amadu Kamal, Founder of Model Analysis Hub and Full-Stack Software Engineer. I combine advanced analytics with modern web development to help businesses make better decisions and create compelling digital experiences.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#projects" class="px-8 py-3.5 rounded-xl btn-primary text-white font-bold shadow-md hover:shadow-lg transition-all">View My Work</a>
+                    <a href="https://modelanalysishub.com" target="_blank" class="px-8 py-3.5 rounded-xl border border-primary text-primary font-bold hover:bg-primary/5 transition-all">Visit Model Analysis Hub</a>
+                </div>
+                
+                <!-- Contact quick info -->
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="p-3 bg-white/80 dark:bg-slate-800/80 rounded-xl border border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Email</p>
+                                <p class="text-sm font-semibold dark:text-white">amadukamal8@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-white/80 dark:bg-slate-800/80 rounded-xl border border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center gap-2">
+                            <i class="fab fa-whatsapp text-green-600"></i>
+                            <div>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">WhatsApp</p>
+                                <p class="text-sm font-semibold dark:text-white">+233 595 586 430</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group hidden lg:block">
+                <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                <div class="relative glass-card rounded-3xl p-4 overflow-hidden shadow-xl">
+                    <div class="w-full aspect-square bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                        <img src="images/amadu-kamal.jpg" 
+                             alt="Amadu Kamal - Founder of Model Analysis Hub" 
+                             class="w-full h-full object-cover rounded-2xl profile-image"
+                             onload="this.classList.add('loaded')">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Stats -->
+    <section id="about" class="py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Building high-impact solutions.</h2>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-8">
+                        My approach combines deep technical knowledge with a focus on user experience. As the founder of Model Analysis Hub, I specialize in turning complex data into clear insights and building responsive, high-performance web applications.
+                    </p>
+                    <div class="flex gap-4 mb-8">
+                        <a href="https://github.com/kamaldeenjnr" class="text-2xl text-gray-500 hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/amadu-kamal-65ab5326a" class="text-2xl text-gray-500 hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/233595586430" class="text-2xl text-gray-500 hover:text-green-600 transition-colors"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    
+                    <!-- Stats Section -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary stat-number">2+</div>
+                            <div class="text-xs text-gray-500 dark:text-gray-400">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary stat-number">Advanced</div>
+                            <div class="text-xs text-gray-500 dark:text-gray-400">Analytics</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary stat-number">100%</div>
+                            <div class="text-xs text-gray-500 dark:text-gray-400">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="glass-card p-8 rounded-2xl">
+                        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 text-xl">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-3 text-gray-800 dark:text-white">Data Analysis & Statistical Modeling</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">Advanced statistical analysis, predictive modeling, and interpretation of results. Turning raw data into actionable insights with clear visual reports.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-6 text-xl">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-3 text-gray-800 dark:text-white">Full-Stack Development</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">Responsive websites, web applications, and custom dashboards built with modern frameworks like React and Node.js for optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gradient-to-br from-blue-50/50 to-purple-50/50 dark:from-slate-900/50 dark:to-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-sm font-semibold text-primary uppercase tracking-wider mb-3">What I Offer</p>
+                <h2 class="text-3xl font-bold mb-4 text-gray-800 dark:text-white">Comprehensive Data & Digital Services</h2>
+                <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+                <p class="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">End-to-end solutions that transform your data into actionable insights and build digital experiences that drive results.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                        <i class="fas fa-chart-bar text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 dark:text-white">Data Analysis & Statistical Modeling</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Advanced statistical analysis, predictive modeling, and interpretation of results. We turn raw data into actionable insights with clear visual reports.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center mb-5">
+                        <i class="fas fa-code text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 dark:text-white">Web Design & Development</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Responsive websites, web applications, and e-commerce solutions built with modern frameworks for optimal performance and user experience.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-5">
+                        <i class="fas fa-chart-pie text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 dark:text-white">Interactive Dashboards & Reporting</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Custom dashboards (PowerBI), automated reporting systems, and real-time data visualization for decision makers.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 rounded-xl bg-green-500/10 flex items-center justify-center mb-5">
+                        <i class="fas fa-clipboard-check text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 dark:text-white">Survey Design & Data Collection</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">End-to-end survey solutions: design, implementation, data cleaning, quality assurance, and statistical analysis of results.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 rounded-xl bg-orange-500/10 flex items-center justify-center mb-5">
+                        <i class="fas fa-chart-line text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 dark:text-white">Data Visualization & Infographics</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Creating compelling visual representations of data that tell stories and make complex information easy to understand.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center mb-5">
+                        <i class="fas fa-handshake text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800 dark:text-white">Consulting & Strategy</h3>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">Data strategy consulting, digital transformation planning, project management, and technical advisory for analytics initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="py-32 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-end justify-between mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4 text-gray-800 dark:text-white">Featured Work</h2>
+                    <p class="text-gray-600 dark:text-gray-300">Selected engineering accomplishments.</p>
+                </div>
+                <div class="h-px bg-gray-300 dark:bg-gray-700 flex-grow mx-8 hidden md:block"></div>
+            </div>
+
+            <!-- Project 1: Model Analysis Hub -->
+            <div class="group relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-primary/10 to-transparent rounded-[2rem] opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <div class="relative glass-card rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-xl">
+                    <div class="p-10 lg:p-16 flex flex-col justify-center order-2 lg:order-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="px-3 py-1 rounded bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest">Analytics Platform</span>
+                            <span class="text-gray-500 dark:text-gray-400 text-xs font-mono">Data Strategy</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white group-hover:text-primary transition-colors">Model Analysis Hub</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed">
+                            A high-end analytics platform that translates complex statistical models into actionable business strategy. Features custom data pipelines, interactive dashboards with real-time analytics, and consulting workflows for forward-thinking enterprises.
+                        </p>
+                        <div class="flex flex-wrap gap-3 mb-6">
+                            <span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-mono">#Python</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-mono">#D3.js</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-mono">#Analytics</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-mono">#RealTime</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://modelanalysis.wuaze.com/" target="_blank" class="px-4 py-2 rounded-lg bg-primary/20 text-primary text-sm font-bold hover:bg-primary/30 transition-all">
+                                <i class="fas fa-external-link-alt mr-2"></i>Visit Website
+                            </a>
+                            <a href="https://github.com/kamaldeenjnr/model-analysis-hub" target="_blank" class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition-all">
+                                <i class="fab fa-github mr-2"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-900 overflow-hidden order-1 lg:order-2 flex items-center justify-center p-8">
+                         <div class="glass-card w-full h-full rounded-2xl shadow-2xl relative overflow-hidden min-h-[300px]">
+                            <img src="images/model-analysis-hub.jpg" 
+                                 alt="Model Analysis Hub Dashboard"
+                                 class="w-full h-full object-cover rounded-2xl project-image"
+                                 onload="this.classList.add('loaded')">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent pointer-events-none"></div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: ProjectFlow System -->
+            <div class="group relative mt-16">
+                <div class="absolute -inset-4 bg-gradient-to-r from-secondary/10 to-transparent rounded-[2rem] opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <div class="relative glass-card rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 shadow-xl">
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-slate-800 dark:to-slate-900 overflow-hidden flex items-center justify-center p-8">
+                         <div class="glass-card w-full h-full rounded-2xl shadow-2xl relative overflow-hidden min-h-[300px]">
+                            <img src="images/projectflow-dashboard.jpg" 
+                                 alt="ProjectFlow System Dashboard"
+                                 class="w-full h-full object-cover rounded-2xl project-image"
+                                 onload="this.classList.add('loaded')">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-secondary/10 to-transparent pointer-events-none"></div>
+                         </div>
+                    </div>
+                    <div class="p-10 lg:p-16 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="px-3 py-1 rounded bg-secondary/20 text-secondary text-xs font-bold uppercase tracking-widest">System Engineering</span>
+                            <span class="text-gray-500 dark:text-gray-400 text-xs font-mono">project Work Management</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white group-hover:text-secondary transition-colors">ProjectFlow System</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed">
+                            Designed and deployed a robust full-stack management ecosystem featuring multi-tenant portals, complex progress tracking, and integrated reporting. Built with security and scalability at its core.
+                        </p>
+                        <div class="flex flex-wrap gap-3 mb-6">
+                            <span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-mono">#Supabase</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-mono">#React</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-mono">#Tailwind</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="px-4 py-2 rounded-lg bg-secondary/20 text-secondary text-sm font-bold hover:bg-secondary/30 transition-all">
+                                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                            </a>
+                            <a href="https://github.com/kamaldeenjnr/projectflow" target="_blank" class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition-all">
+                                <i class="fab fa-github mr-2"></i>Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gradient-to-br from-blue-50/30 to-purple-50/30 dark:from-slate-900/30 dark:to-slate-800/30">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Client Feedback</p>
+                <h2 class="text-3xl font-bold mb-4 text-gray-800 dark:text-white">Trusted By Industry Leaders</h2>
+                <div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+                <p class="text-gray-600 dark:text-gray-300 mt-4">Don't just take my word for it - hear what my clients have to say.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="mb-4">
+                        <i class="fas fa-quote-left text-2xl text-primary/50"></i>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 italic mb-6">"The dashboard Amadu developed transformed how our team interacts with data. We've reduced reporting time by 70% and improved decision-making significantly."</p>
+                    <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <p class="font-semibold text-gray-800 dark:text-white">Sarah</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400"></p>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="mb-4">
+                        <i class="fas fa-quote-left text-2xl text-primary/50"></i>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 italic mb-6">"Working with Amadu was a game-changer for our research project. His statistical expertise and clear communication made complex data accessible to our entire team."</p>
+                    <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <p class="font-semibold text-gray-800 dark:text-white">Michael</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400"></p>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="mb-4">
+                        <i class="fas fa-quote-left text-2xl text-primary/50"></i>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 italic mb-6">"Our new website not only looks fantastic but performs exceptionally. The integrated analytics provide valuable insights into user behavior we never had before."</p>
+                    <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <p class="font-semibold text-gray-800 dark:text-white">David</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <footer id="contact" class="py-32 border-t border-gray-200 dark:border-gray-800 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 text-gray-800 dark:text-white">Ready to initiate?</h2>
+            <p class="text-gray-600 dark:text-gray-300 text-lg mb-12 max-w-2xl mx-auto">
+                I am currently open to freelance opportunities and full-time engineering roles. Let's discuss how I can contribute to your next technical solution.
+            </p>
+            
+            <!-- Contact Form - Formspree -->
+            <div class="max-w-2xl mx-auto mb-12">
+                <form id="contact-form" action="https://formspree.io/f/movkwrlb" method="POST" class="space-y-4">
+                    <div id="form-status" class="hidden p-4 rounded-lg"></div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" name="name" placeholder="Your Name" required
+                               class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-white focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+                        <input type="email" name="email" placeholder="Your Email" required
+                               class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-white focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all">
+                    </div>
+                    <select name="service" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-white focus:border-primary focus:outline-none">
+                        <option value="">Select a service</option>
+                        <option value="data-analysis">Data Analysis & Statistical Modeling</option>
+                        <option value="web-development">Web Design & Development</option>
+                        <option value="dashboard">Dashboards & Reporting</option>
+                        <option value="consulting">Consulting & Strategy</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea name="message" rows="5" placeholder="Tell me about your project..." required
+                              class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-white focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"></textarea>
+                    <button type="submit" id="submit-btn" class="w-full px-6 py-3 rounded-xl btn-primary text-white font-bold transition-all transform hover:scale-105">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="mb-12">
+                <a href="mailto:amadukamal8@gmail.com" class="inline-block px-12 py-5 rounded-2xl btn-primary text-white text-xl font-extrabold transition-all transform hover:scale-105 shadow-lg">
+                    amadukamal8@gmail.com
+                </a>
+                <div class="mt-4">
+                    <a href="https://wa.me/233595586430" class="text-gray-600 dark:text-gray-300 hover:text-green-600 transition-colors">
+                        <i class="fab fa-whatsapp mr-2 text-green-600"></i>+233 595 586 430
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-32 flex flex-col md:flex-row items-center justify-between gap-8 py-8 border-t border-gray-200 dark:border-gray-800">
+                <p class="text-sm text-gray-500 dark:text-gray-400">&copy; <span id="year"></span> Amadu Kamal. Founder of Model Analysis Hub. All rights reserved.</p>
+                <div class="flex gap-8 text-sm font-bold text-gray-500 dark:text-gray-400">
+                    <a href="https://github.com/kamaldeenjnr" class="hover:text-primary transition-colors"><i class="fab fa-github mr-1"></i>Github</a>
+                    <a href="https://linkedin.com/in/amadu-kamal-65ab5326a" class="hover:text-primary transition-colors"><i class="fab fa-linkedin mr-1"></i>Linkedin</a>
+                    <a href="https://wa.me/233595586430" class="hover:text-green-600 transition-colors"><i class="fab fa-whatsapp mr-1"></i>WhatsApp</a>
+                    <a href="https://modelanalysishub.com" class="hover:text-primary transition-colors"><i class="fas fa-chart-line mr-1"></i>Model Analysis Hub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-24 right-6 w-12 h-12 rounded-full btn-primary text-white shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 invisible z-40 flex items-center justify-center">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Preloader
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }
+        });
+
+        // Image loading handler
+        document.querySelectorAll('img').forEach(img => {
+            if (img.complete) {
+                img.classList.add('loaded');
+            } else {
+                img.addEventListener('load', () => img.classList.add('loaded'));
+            }
+        });
+
+        // Dark/Light Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+            
+            if (isDark) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+            
+            // Navbar backdrop
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/90', 'dark:bg-slate-900/90', 'backdrop-blur-xl', 'py-4', 'shadow-md');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.remove('bg-white/90', 'dark:bg-slate-900/90', 'backdrop-blur-xl', 'py-4', 'shadow-md');
+                nav.classList.add('py-6');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('menu-btn');
+        let mobileMenuOpen = false;
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const nav = document.getElementById('navbar');
+                let mobileMenu = document.getElementById('mobile-menu');
+                
+                if (!mobileMenu) {
+                    mobileMenu = document.createElement('div');
+                    mobileMenu.id = 'mobile-menu';
+                    mobileMenu.className = 'md:hidden bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-gray-800 px-4 py-6 mt-4 rounded-2xl';
+                    mobileMenu.innerHTML = `
+                        <div class="flex flex-col gap-4">
+                            <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium py-2">About</a>
+                            <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium py-2">Projects</a>
+                            <a href="#services" class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium py-2">Services</a>
+                            <a href="#testimonials" class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium py-2">Testimonials</a>
+                            <a href="https://modelanalysishub.com" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium py-2">Model Analysis Hub</a>
+                            <a href="#contact" class="px-4 py-2.5 rounded-lg btn-primary text-white font-semibold text-center mt-2">Hire Me</a>
+                        </div>
+                    `;
+                    nav.after(mobileMenu);
+                }
+                
+                if (mobileMenuOpen) {
+                    mobileMenu.style.display = 'none';
+                    mobileMenuOpen = false;
+                } else {
+                    mobileMenu.style.display = 'block';
+                    mobileMenuOpen = true;
+                }
+            });
+        }
+
+        // Form submission handling
+        const form = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+                
+                const formData = new FormData(form);
+                
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        formStatus.className = 'p-4 rounded-lg bg-green-50 dark:bg-green-900/30 text-green-800 dark:text-green-300 border border-green-200 dark:border-green-800 mb-4';
+                        formStatus.innerHTML = '<div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-600 text-xl"></i><div><strong>Success!</strong> Your message has been sent. I\'ll get back to you within 24 hours.</div></div>';
+                        formStatus.classList.remove('hidden');
+                        form.reset();
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
+                } catch (error) {
+                    formStatus.className = 'p-4 rounded-lg bg-red-50 dark:bg-red-900/30 text-red-800 dark:text-red-300 border border-red-200 dark:border-red-800 mb-4';
+                    formStatus.innerHTML = '<div class="flex items-center gap-3"><i class="fas fa-exclamation-triangle text-red-600 text-xl"></i><div><strong>Error!</strong> There was a problem sending your message. Please try again or email me directly.</div></div>';
+                    formStatus.classList.remove('hidden');
+                }
+                
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i>Send Message';
+                
+                setTimeout(() => {
+                    formStatus.classList.add('hidden');
+                }, 8000);
+            });
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
